@@ -1,0 +1,22 @@
+* my first program in CFPL
+VAR abc AS INT
+VAR z=1.32 AS FLOAT
+VAR x, w_23='w' AS CHAR
+VAR t="TRUE" AS BOOL
+VAR xyz, ab=100 AS INT
+VAR a=100, b=200, c=300 AS INT
+VAR d="FALSE" AS BOOL
+VAR m=5, n=10, o = -1 AS INT
+START
+    abc=b=200
+    c=199
+    w_23='a'
+    * this is a comment
+    t =  ( t OR abc <> b )
+    xyz= ((ab *m)/n + n) * o
+    OUTPUT: abc & "hi" & b & "#" & w_23 & "[[]" & t & "#" & c & "[#]" & "#"
+    OUTPUT: d
+    OUTPUT: xyz
+    d = NOT (a < b AND c <>200)
+    OUTPUT: d
+STOP
